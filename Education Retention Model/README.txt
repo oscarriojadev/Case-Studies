@@ -1,6 +1,3 @@
-Here's the properly formatted GitHub `.txt` file version with GitHub-flavored Markdown syntax that will render correctly when viewed on GitHub:
-
-```
 Case Study: Predicting Student Retention Using Machine Learning
 ====================================================================
 
@@ -127,20 +124,3 @@ ETHICAL CONSIDERATIONS
 --------------------------------------------------------------------
 - Maintain student data anonymity
 - Regularly check for model bias
-
-Author: [Your Name]
-Date: [YYYY-MM-DD]
-License: MIT
-```
-
-Key GitHub formatting features used:
-1. Section headers with `===` and `---` underlines
-2. Subsection headers with `~~~` underlines
-3. Code blocks wrapped in triple backticks ```
-4. Tables using pipe `|` syntax
-5. Lists using `-` and numbered items
-6. Italic text with `*asterisks*`
-7. Clear separation of sections
-8. Monospace formatting for file paths and commands
-
-This format will render beautifully when viewed directly on GitHub.
