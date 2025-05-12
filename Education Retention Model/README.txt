@@ -1,8 +1,3 @@
-Here’s the properly formatted `txt` file for GitHub, optimized for readability with Markdown-like headers and consistent spacing:
-
----
-
-```txt
 # Case Study: Predicting Student Retention Using Machine Learning
 
 ## 1. INTRODUCTION  
