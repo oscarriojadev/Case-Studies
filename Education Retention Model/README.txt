@@ -99,7 +99,7 @@ This model effectively identifies at-risk students, enabling proactive intervent
 
 ## FILE DETAILS
 
-**Files included in repository**:
+**Files to be included in repository**:
 
 * `education_retention_model.py`
 * `data.csv` (sample dataset)
