@@ -1,4 +1,3 @@
-```markdown
 # Case Study: Predicting Student Retention Using Machine Learning
 
 ## 1. INTRODUCTION
@@ -122,5 +121,3 @@ seaborn>=0.11.2
 
 * 🔒 Maintain student data anonymity
 * ⚖️ Regularly check for model bias
-
-```
