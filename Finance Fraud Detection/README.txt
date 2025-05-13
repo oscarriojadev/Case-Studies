@@ -47,19 +47,38 @@ seaborn
 
 ## 🛠️ Usage
 
-1. Prepare your dataset:
+1. Dataset:
 
-   * A CSV file containing transaction data
-   * Must include a binary `Fraud` column (1 = fraudulent, 0 = legitimate)
+   Dataset Description:
+    *amount: Transaction amount (higher amounts more likely to be fraudulent)
+    
+    *time: Transaction time (fraud often occurs at unusual hours)
+    
+    *feature1: Normalized transaction frequency (higher for fraud)
+    
+    *feature2: Account age in days (newer accounts more likely to be fraudulent)
+    
+    *feature3: Location risk score (higher for fraud)
+    
+    *feature4: Transaction velocity (higher for fraud)
+    
+    *Fraud: Target variable (1 = fraudulent, 0 = legitimate)
+    
+  Characteristics:
+    *15 sample transactions (10 legitimate, 5 fraudulent)
+    
+    *Fraudulent transactions tend to have:
+    
+    *Higher amounts (> $1800)
+    
+    *Higher feature values (feature1, feature3, feature4)
+    
+    *Occur at unusual hours (midnight to 5am)
+    
+    *Legitimate transactions are smaller and occur during normal business hours
+    
+    *The dataset is designed to show clear patterns that a Random Forest classifier should be able to detect.
 
-   **Example format**:
-
-   ```
-   amount,time,feature1,feature2,...,Fraud
-   150.00,12:30,0.5,10,...,0
-   2500.00,03:15,1.2,45,...,1
-   ...
-   ```
 
 2. Run the model:
 
