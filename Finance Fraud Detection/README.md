@@ -31,7 +31,8 @@ A machine learning solution for detecting fraudulent financial transactions usin
 - Install dependencies with:
   ```bash
   pip install -r requirements.txt
-````
+   ```
+
 
 **Required packages**:
 
@@ -42,6 +43,89 @@ scikit-learn
 matplotlib
 seaborn
 ```
+
+---
+
+## Methodology
+## Justification for Using Random Forest
+
+### Advantages of Random Forest
+
+#### Handling High-Dimensional Data
+
+**Description:** Efficiently handles datasets with many features.
+
+**Justification:** Financial datasets often contain numerous variables. Random Forest's ability to handle this makes it suitable for fraud detection.
+
+---
+
+#### Robustness to Overfitting
+
+**Description:** Aggregates multiple decision trees to reduce variance and improve generalization.
+
+**Justification:** Ensures good performance on unseen data by minimizing overfitting risks.
+
+---
+
+#### Feature Importance
+
+**Description:** Offers straightforward assessment of which features are most influential.
+
+**Justification:** Enhances interpretability and supports informed decision-making.
+
+---
+
+#### Handling Non-Linear Relationships
+
+**Description:** Captures non-linear patterns without explicit feature engineering.
+
+**Justification:** Many financial relationships are non-linear; Random Forest naturally models these complexities.
+
+---
+
+#### Robustness to Outliers and Noise
+
+**Description:** Performs well even with imperfect data.
+
+**Justification:** Ensures model reliability in real-world, noisy datasets.
+
+---
+
+#### Ease of Use
+
+**Description:** Easy to implement and requires fewer hyperparameters compared to other models.
+
+**Justification:** Facilitates quick deployment and tuning, ideal for fast-paced environments.
+
+---
+
+## Comparison with Other Models
+
+### Logistic Regression
+
+- **Pros:** Simple, interpretable, efficient for linearly separable data.
+- **Cons:** Struggles with non-linear relationships and high-dimensional data; less robust to outliers.
+
+---
+
+### Support Vector Machines (SVM)
+
+- **Pros:** Effective in high-dimensional spaces; flexible with kernel functions.
+- **Cons:** Computationally intensive with large datasets; requires careful tuning.
+
+---
+
+### Neural Networks
+
+- **Pros:** Highly flexible; models complex relationships.
+- **Cons:** Requires large data and computational resources; can be hard to interpret; prone to overfitting.
+
+---
+
+### Gradient Boosting Machines (GBM)
+
+- **Pros:** High predictive accuracy; handles non-linear relationships.
+- **Cons:** More prone to overfitting than Random Forest; requires careful tuning; can be resource-intensive.
 
 ---
 
