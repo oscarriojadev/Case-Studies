@@ -150,17 +150,17 @@ seaborn
     
   Characteristics:
     *15 sample transactions (10 legitimate, 5 fraudulent)
-    
+    *
     *Fraudulent transactions tend to have:
-    
+    *
     *Higher amounts (> $1800)
-    
+    *
     *Higher feature values (feature1, feature3, feature4)
-    
+    *
     *Occur at unusual hours (midnight to 5am)
-    
+    *
     *Legitimate transactions are smaller and occur during normal business hours
-    
+    *
     *The dataset is designed to show clear patterns that a Random Forest classifier should be able to detect.
 
 
