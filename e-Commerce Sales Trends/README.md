@@ -13,6 +13,50 @@ This tool provides functionality to analyze historical e-commerce sales data and
 - ARIMA modeling and forecasting
 - Model evaluation
 
+## 🧠 Why ARIMA?
+
+The **ARIMA (AutoRegressive Integrated Moving Average)** model was chosen for this e-commerce sales forecasting task for the following reasons:
+
+### ✅ Time Series Nature of the Problem
+E-commerce sales data are typically sequential and time-dependent, which makes ARIMA a natural choice. ARIMA is specifically designed for time series forecasting and excels in capturing both trend and seasonality components of the data.
+
+### ✅ Incorporates Past Information
+ARIMA models use lagged values (auto-regression) and previous forecast errors (moving average) to predict future values. This allows it to make use of past sales trends to forecast future sales, which is crucial in e-commerce sales forecasting.
+
+### ✅ Flexibility and Simplicity
+ARIMA is relatively simple and interpretable compared to more complex models like machine learning techniques. It requires minimal input and can be effectively tuned with three hyperparameters: **p** (AR), **d** (differencing), and **q** (MA). Additionally, it works well even with non-stationary data after differencing.
+
+### ✅ Seasonal Decomposition
+The ARIMA model can handle trends and seasonality if the correct seasonal differencing is applied. With seasonal decomposition, it can split the time series into its underlying components: trend, seasonality, and residuals, which helps in both forecasting and understanding underlying patterns.
+
+---
+
+## 🔍 Model Comparison: Why ARIMA Over Other Models?
+
+Several other models could be used for forecasting time series data, such as **Exponential Smoothing**, **Prophet**, and **Machine Learning models**. However, ARIMA offers a good balance of simplicity, interpretability, and accuracy for our needs.
+
+| **Model**             | **Accuracy**   | **Handling Seasonality** | **Complexity**        | **Interpretability** | **Comments**                                                    |
+|-----------------------|----------------|--------------------------|-----------------------|----------------------|------------------------------------------------------------------|
+| **ARIMA**             | ✅ High        | ✅ Yes (via seasonal ARIMA) | ⚙️ Low                | ✅ High              | Ideal for time series with clear trends and seasonality. Simple to use. |
+| **Exponential Smoothing** | 🟡 Medium     | ✅ Yes (Holt-Winters)     | ⚙️ Medium             | 🟡 Moderate          | Works well for smooth trends but lacks the flexibility of ARIMA in handling residuals. |
+| **Prophet**           | ✅ High        | ✅ Yes                   | ⚙️ Medium             | 🟡 Moderate          | Excellent for daily/weekly seasonal data, but more complex to tune. |
+| **Machine Learning (e.g., XGBoost)** | 🟡 Medium  | ❌ Not inherently suited  | ⚙️ High               | 🔴 Low               | Great for non-linear data, but requires extensive feature engineering and may not perform as well for strictly time-dependent trends. |
+
+---
+
+## 🎯 Summary
+
+Given the nature of e-commerce sales data, which exhibit clear trends and seasonal patterns, **ARIMA** was chosen because:
+
+- It effectively captures trends and seasonality, critical for sales forecasting.
+- The model is relatively simple to tune and interpret.
+- ARIMA's ability to use historical values and past forecast errors aligns well with how sales data evolve over time.
+
+For more complex datasets or cases with multiple seasonalities and holidays, **Prophet** could be a better alternative, though it requires more tuning. Additionally, machine learning models like **XGBoost** might be considered if the relationships between features and sales become more complex.
+
+In conclusion, ARIMA provides a solid, interpretable solution for forecasting e-commerce sales in this case, with strong performance and minimal preprocessing requirements.
+
+
 ## Requirements
 
 ```
