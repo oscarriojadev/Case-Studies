@@ -111,7 +111,3 @@ python flight_delay_prediction.py
 ## 📬 License
 
 MIT License — use freely with attribution.
-
----
-
-Let me know if you want a version with badges or formatted for Jupyter Notebooks.
