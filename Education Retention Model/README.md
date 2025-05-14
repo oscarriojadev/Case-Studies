@@ -119,7 +119,7 @@ Accuracy: 0.872, Precision: 0.853, Recall: 0.891, F1: 0.871
 1. **Install requirements**:
    ```bash
    pip install -r requirements.txt
-````
+   ```
 
 2. **Prepare** `data.csv` with a `Retention` column
 
