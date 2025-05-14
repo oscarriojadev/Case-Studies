@@ -225,6 +225,3 @@ MIT License — see [LICENSE](LICENSE) for details.
 Contributions welcome! Please open an issue or pull request.
 
 ---
-
-**Author**: *\[Your Name]*
-**Last Updated**: *2023-11-15*
