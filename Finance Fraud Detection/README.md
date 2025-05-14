@@ -236,7 +236,7 @@ random_state = 42                         # For reproducibility
 
 ## 🪪 License
 
-MIT License – See [LICENSE](LICENSE) for details.
+MIT License.
 
 ---
 
