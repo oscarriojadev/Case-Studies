@@ -216,7 +216,7 @@ forecast_steps = 10
 
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License.
 
 ---
 
